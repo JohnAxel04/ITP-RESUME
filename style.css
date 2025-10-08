@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 50vh;
+    background-image: url(pic/pixel-art-seamless-background-with-blue-sky-cloud-ground_887552-15752.jpg);
+    background-size: 100%;
+    background-position:top;
+    background-repeat: no-repeat;
+}
+#mynav{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    background-color: rgb(14, 31, 43);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    z-index: 999;
+}
+nav ul{
+    justify-content: flex-end;
+    display: flex;
+    list-style: none;
+    width: 100%;
+    align-items: center;
+}
+nav a{
+    height: 100%;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: rgb(2, 178, 201);
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+nav li:hover{
+    background-color: aqua;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(0, 255, 255, 0.541);
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+@media(max-width: 800px){
+    .hideOnMobile1{
+    display: none;
+    }
+}
+#mylogo{
+    font-size: 30px;
+}
+.carousel{
+    padding-top: 55px;
+    width: 100%;
+    display: flex;
+    overflow-x: auto; /* To have a scrollable */
+}
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    animation: spin 80s infinite reverse linear;
+    padding-right: .8em;
+    margin-left: 10px ;
+}
+.card{
+    flex: 0 0 1em;
+    height: 200px;
+    font-size: 1rem;
+    border-radius: .2em;
+    text-align: center;
+    align-content: center;
+    border-bottom-left-radius: 30px;
+    border-radius: 50px;
+}
+.card img{
+    height: 100px;
+}
+.card2 img{
+    height: 100px;
+}
+@keyframes spin{
+    from {translate: 0;}
+    to {translate: -100%;}
+}
+.carousel2{
+    margin-top: -260px;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+.carousel2::-webkit-scrollbar{
+    display: none;
+}
+.group2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: spin 200s infinite alternate linear;
+    gap:1em;
+    padding-right: .8em;
+    
+}
+.card2{
+    flex: 0 0 1em;
+    gap: 0.5em;
+    height: 200px;
+    text-align: center;
+    align-content: center;
+    border-radius: 100%;
+}
+.boxx{
+    background-color: rgba(75, 119, 133, 0.486);
+    width: 435px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    min-height: 50vh;
+    float: left;
+    margin: 45px;
+    margin-top: 0;
+}
