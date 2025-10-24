@@ -148,6 +148,10 @@ body{
 #box4 a:hover{
     color: white;
 }
+.we li{
+    list-style: none;
+    padding-left: -5px;
+}
 #box5{
     padding: 10px;
     float: left;
@@ -211,7 +215,7 @@ body{
     margin-top: 8px;
     color: rgba(255, 255, 255, 0.637);
     font-size: 14px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-ser;
+    font-family: ;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
 }
